@@ -1,6 +1,9 @@
 # -- coding: utf-8 --
 
+import pymysql
 import redis
+
+pymysql.install_as_MySQLdb()
 
 
 class Config(object):
@@ -10,7 +13,7 @@ class Config(object):
     SECRET_KEY = "NXSAONFS374543ndosnv#%$?"
 
     # 数据库
-    SQLALCHEMY_DATABASE_URI = "mysql://root:admin123@127.0.0.1:3306/ihome"
+    SQLALCHEMY_DATABASE_URI = "mysql://root:123456@127.0.0.1:3306/kesheer"
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
     # redis

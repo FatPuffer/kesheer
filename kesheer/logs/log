@@ -1,7 +1,0 @@
-WARNING _internal.py:122  * Debugger is active!
-INFO _internal.py:122  * Debugger PIN: 142-808-081
-ERROR users.py:9 error info
-WARNING users.py:10 warn info
-INFO users.py:11 info info
-DEBUG users.py:12 debug info
-INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 08:59:18] "GET /api/v1.0/index HTTP/1.1" 200 -
