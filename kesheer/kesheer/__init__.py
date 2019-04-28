@@ -7,6 +7,7 @@ from flask_wtf import CSRFProtect
 import logging
 from logging.handlers import RotatingFileHandler
 import redis
+from kesheer.utils.commons import ReConverter  # 自定义正则转换器
 
 
 from config import config_map
@@ -60,8 +61,15 @@ def create_app(config_name):
     # 为flask补充csrf防护
     CSRFProtect(app)
 
+    # 为flask添加自定义的转换器
+    app.url_map.converters["re"] = ReConverter
+
     from . import api_1_0  # 避免循环导包
     # 注册蓝图
     app.register_blueprint(api_1_0.api, url_prefix="/api/v1.0")
+
+    # 注册提供静态文件的蓝图
+    from kesheer import web_html
+    app.register_blueprint(web_html.html)
 
     return app
