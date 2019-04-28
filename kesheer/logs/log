@@ -33,3 +33,35 @@ INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 14:04:50] "GET /register.html H
 INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 14:04:51] "GET /static/css/i_home/register.css HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 14:04:51] "GET /static/js/i_home/register.js HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 14:04:51] "GET /api/v1.0/image_codes/d0a96ec9-0bb8-4b79-9117-534689a7d975 HTTP/1.1" 404 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+INFO _internal.py:122  * Detected change in '/home/ubantu/myproject/kesheer/kesheer/kesheer/api_1_0/__init__.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:10:20] "GET /api/v1.0/verify_code/sdsd HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:10:32] "GET /api/v1.0/image_code/sdsd HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:10:39] "GET /api/v1.0/image_codes/sdsd HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:10:43] "GET /api/v1.0/image_codes/sdsd HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:10:44] "GET /api/v1.0/image_codes/sdsd HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:10:45] "GET /api/v1.0/image_codes/sdsd HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:10:45] "GET /api/v1.0/image_codes/sdsd HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:10:46] "GET /api/v1.0/image_codes/sdsd HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:32:40] "GET /api/v1.0/image_codes/3456 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:57:05] "GET /api/v1.0/reister HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:57:09] "GET /api/v1.0/reister.html HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:57:44] "GET /reister.html HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:57:54] "GET /api/v1.0/image_codes/e53c8aef-ab63-44eb-911c-42f9b32ad360 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:57:57] "GET /api/v1.0/image_codes/5850b83a-8125-4349-8db0-e9d9c538cbc9 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:57:59] "GET /api/v1.0/image_codes/2c900a27-20f3-4cc8-8829-2df6b8028676 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:58:00] "GET /api/v1.0/image_codes/ec84f7dc-e0ad-4e74-9bfa-429fe0794208 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:58:02] "GET /api/v1.0/image_codes/4afc6567-7318-4cd0-8698-5037543bfbbc HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:58:03] "GET /api/v1.0/image_codes/877f9c4f-bd9d-4ceb-8192-9428adbc586c HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:58:04] "GET /api/v1.0/image_codes/973e7163-53cd-4f3f-9044-71c16e21f920 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:58:09] "GET /api/v1.0/image_codes/f26b1ec8-25d1-45d6-a57d-5f5ee73ede8c HTTP/1.1" 200 -
