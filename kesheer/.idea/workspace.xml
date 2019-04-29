@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68851445-ccc3-458e-94d4-d221c094214b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kesheer/api_1_0/passport.py" beforeDir="false" afterPath="$PROJECT_DIR$/kesheer/api_1_0/passport.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
     </list>
@@ -44,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/passport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="447">
+              <caret line="169" column="60" selection-start-line="169" selection-start-column="60" selection-end-line="169" selection-end-column="60" />
               <folding>
                 <element signature="e#23#40#0" expanded="true" />
               </folding>
@@ -67,6 +68,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
               <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kesheer/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+              <folding>
+                <element signature="e#23#46#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -298,12 +311,12 @@
       <updated>1556412717966</updated>
       <workItem from="1556412719885" duration="12682000" />
       <workItem from="1556438179060" duration="7263000" />
-      <workItem from="1556500156599" duration="12433000" />
+      <workItem from="1556500156599" duration="14292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32378000" />
+    <option name="totallyTimeSpent" value="34237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1855" height="938" extended-state="6" />
@@ -323,7 +336,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32849365" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25155666" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3237858" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -387,16 +400,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kesheer/libs/yuntongxun/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="e#23#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -480,13 +483,6 @@
     <entry file="file://$PROJECT_DIR$/kesheer/static/js/i_home/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kesheer/static/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -494,10 +490,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+          <folding>
+            <element signature="e#23#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/passport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="447">
+          <caret line="169" column="60" selection-start-line="169" selection-start-column="60" selection-end-line="169" selection-end-column="60" />
           <folding>
             <element signature="e#23#40#0" expanded="true" />
           </folding>
