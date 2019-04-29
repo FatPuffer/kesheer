@@ -168,3 +168,12 @@ def check_login():
         return jsonify(errno=RET.OK, errmsg="true", data={"name": name})
     else:
         return jsonify(errno=RET.SESSIONERR, errmsg="false")
+
+
+@api.route("/session", methods=["DELETE"])
+def logout():
+    """登出"""
+    # 清除session数据
+    session.clear()
+    return jsonify(errno=RET.OK, errmsg="OK")
+
