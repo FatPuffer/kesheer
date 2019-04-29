@@ -39,6 +39,6 @@ class ProdectConfig(Config):
 
 config_map = {
     'develope': DevelopmentConfig,
-    'product': DevelopmentConfig
+    'product': ProdectConfig
 }
 

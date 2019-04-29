@@ -65,3 +65,72 @@ INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:58:02] "GET /api/v1.0/image_
 INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:58:03] "GET /api/v1.0/image_codes/877f9c4f-bd9d-4ceb-8192-9428adbc586c HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:58:04] "GET /api/v1.0/image_codes/973e7163-53cd-4f3f-9044-71c16e21f920 HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [28/Apr/2019 15:58:09] "GET /api/v1.0/image_codes/f26b1ec8-25d1-45d6-a57d-5f5ee73ede8c HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+INFO _internal.py:122  * Detected change in '/home/ubantu/myproject/kesheer/kesheer/config.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on /register.html [GET]
+Traceback (most recent call last):
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask/app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask/ctx.py", line 377, in push
+    self.app, self.request
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:15] "GET /register.html HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /register.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /static/css/i_home/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /static/css/i_home/register.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /static/js/i_home/register.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /static/images/logo@128x59.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:36] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:37] "GET /api/v1.0/image_codes/b136f2ae-8131-4afa-9b7b-fa1cfdf0eb46 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:54] "GET /api/v1.0/image_codes/86fa59e9-1189-4efa-9589-004ce1b5b5f7 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:55] "GET /api/v1.0/image_codes/38be064f-484a-4823-a8cf-900fc5776018 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:10:57] "GET /api/v1.0/image_codes/cd67e761-98a4-424c-b933-66c4fc5ba8f5 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:14:23] "GET /sms_codes HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:15:12] "GET /api/v1.0/sms_codes/18829711180 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:17:44] "GET /api/v1.0/image_codes/489fc4ed-719d-4996-b4c2-b1047d2fe145 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:18:17] "GET /api/v1.0/sms_codes/18829711180 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:18:36] "GET /api/v1.0/sms_codes/18829711180 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:18:43] "GET /api/v1.0/sms_codes/18829711180 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:20:32] "GET /api/v1.0/image_codes/de6898c2-ce51-4863-966a-9e99144501eb HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:22:18] "GET /api/v1.0/sms_codes/18829711180 HTTP/1.1" 200 -
+ERROR verify_code.py:80 'NoneType' object has no attribute 'decode'
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:23:44] "GET /api/v1.0/sms_codes/18829711180?image_code=UIRL&image_code_id=de6898c2-ce51-4863-966a-9e99144501eb HTTP/1.1" 200 -
+ERROR verify_code.py:80 'NoneType' object has no attribute 'decode'
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:24:36] "GET /api/v1.0/sms_codes/18829711180?image_code=UIRL&image_code_id=de6898c2-ce51-4863-966a-9e99144501eb HTTP/1.1" 200 -
+ERROR verify_code.py:80 'NoneType' object has no attribute 'decode'
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:25:03] "GET /api/v1.0/sms_codes/18829711180?image_code=UIRL&image_code_id=de6898c2-ce51-4863-966a-9e99144501eb HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:25:15] "GET /api/v1.0/sms_codes/18829711180?image_code=UIRL&image_code_id=de6898c2-ce51-4863-966a-9e99144501eb HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:25:53] "GET /api/v1.0/image_codes/b22cb328-68d1-4c91-822f-49def070c351 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:25:58] "GET /api/v1.0/image_codes/f2cf0a71-3548-45f5-9828-aa71df04d8a3 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:26:43] "GET /api/v1.0/sms_codes/18829711180?image_code=HNCW&image_code_id=f2cf0a71-3548-45f5-9828-aa71df04d8a3 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 10:49:49] "GET /api/v1.0/sms_codes/18829711180?image_code=HNCW&image_code_id=f2cf0a71-3548-45f5-9828-aa71df04d8a3 HTTP/1.1" 200 -
