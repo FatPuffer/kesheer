@@ -1,16 +1,16 @@
 $(document).ready(function(){
-    // ¶ÔÓÚ·¢²¼·¿Ô´£¬Ö»ÓĞÈÏÖ¤ºóµÄÓÃ»§²Å¿ÉÒÔ£¬ËùÒÔÏÈÅĞ¶ÏÓÃ»§µÄÊµÃûÈÏÖ¤×´Ì¬
+    // å¯¹äºå‘å¸ƒæˆ¿æºï¼Œåªæœ‰è®¤è¯åçš„ç”¨æˆ·æ‰å¯ä»¥ï¼Œå¤šä»¥å…ˆåˆ¤æ–­ç”¨æˆ·å®åè®¤è¯çŠ¶æ€
     $.get("/api/v1.0/users/auth", function (resp) {
         if ("4001" == resp.errno){
-            // ÓÃ»§Î´µÇÂ¼
+            // ç”¨æˆ·æœªç™»å½•
             location.href = "/login.html";
         } else if ("0" == resp.errno) {
-            // Î´ÈÏÖ¤µÄÓÃ»§£¬ÔÚÒ³ÃæÖĞÕ¹Ê¾¡°È¥ÈÏÖ¤¡±°´Å¥
+            // æœªè®¤è¯çš„ç”¨æˆ·ï¼Œåœ¨é¡µé¢ä¸­å±•ç¤º "å»è®¤è¯" çš„æŒ‰é’®
             if (!(resp.data.real_name && resp.data.id_card)) {
                 $(".auth-warn").show();
                 return
             }
-            // ÒÑÈÏÖ¤µÄÓÃ»§£¬ÇëÇóÆäÖ®Ç°·¢²¼µÄ·¿Ô´ĞÅÏ¢
+            // å·²è®¤è¯çš„ç”¨æˆ·ï¼Œè¯·æ±‚å…¶ä¹‹å‰å‘å¸ƒçš„æˆ¿æºä¿¡æ¯
             $.get("/api/v1.0/user/houses", function (resp) {
                 if ("0" == resp.errno) {
                     $("#houses-list").html(template("houses-list-tmpl", {house:resp.data.houses}))

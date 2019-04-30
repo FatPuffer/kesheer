@@ -86,6 +86,8 @@ $(document).ready(function(){
 
     // 获取城区信息
     $.get("/api/v1.0/areas", function(resp){
+        alert(resp);
+        console.log(resp.data);
         if ("0" == resp.errno) {
             $(".area-list").html(template("area-list-tmpl", {areas:resp.data}));
 

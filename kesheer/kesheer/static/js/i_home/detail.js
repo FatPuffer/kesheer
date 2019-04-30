@@ -2,7 +2,7 @@ function hrefBack() {
     history.go(-1);
 }
 
-// ½âÎöÌáÈ¡urlÖĞµÄ²éÑ¯×Ö·û´®²ÎÊı
+// è§£ææå–urlä¸­çš„æŸ¥è¯¢å­—ç¬¦ä¸²å‚æ•°
 function decodeQuery(){
     var search = decodeURI(document.location.search);
     return search.replace(/(^\?)/, '').split('&').reduce(function(result, item){
@@ -13,17 +13,17 @@ function decodeQuery(){
 }
 
 $(document).ready(function(){
-    // »ñÈ¡ÏêÇéÒ³ÃæÒªÕ¹Ê¾µÄ·¿Îİ±àºÅ
+    // è·å–è¯¦æƒ…é¡µé¢è¦å±•ç¤ºçš„æˆ¿å±‹ç¼–å·
     var queryData = decodeQuery();
     var houseId = queryData["id"];
 
-    // »ñÈ¡¸Ã·¿ÎİµÄÏêÏ¸ĞÅÏ¢
+    // è·å–æˆ¿å±‹çš„è¯¦ç»†ä¿¡æ¯
     $.get("/api/v1.0/houses/" + houseId, function (resp) {
         if ("0" == resp.errno) {
             $(".swiper-container").html(template("house-image-tmpl", {img_urls:resp.data.house.imag}));
             $(".detail-con").html(template("house-image-tmpl", {img_urls:resp.data.house}));
 
-            // resp.user_idÎª·ÃÎÊÒ³ÃæÓÃ»§£¬resp.data.user_idÎª·¿¶«
+            // resp.user_idä¸ºè®¿é—®é¡µé¢ç”¨æˆ·ï¼Œresp.data.user_idä¸ºæˆ¿ä¸œ
             if (resp.data.user_id != resp.data.house.user_id){
                 $(".book-house").attr("href", "/booking.html?hid=" + resp.data.house.hid);
                 $(".book-house").show();

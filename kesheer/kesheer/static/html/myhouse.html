@@ -32,12 +32,14 @@
                 </li>
             </ul>
             <ul id="houses-list" class="houses-list">
+            </ul>
+            <script id="houses-list-tmpl" type="text/html">
                 <li>
                     <div class="new-house">
                         <a href="/newhouse.html">发布新房源</a>
                     </div>
                 </li>
-                {each houses as house}
+                {{ each houses as house }}
                 <li>
                     <a href="/detail.html?id={{house.house_id}}">
                         <div class="house-title">
@@ -51,12 +53,12 @@
                                     <li>价格：￥{{(house.price/100.0).toFixed(0)}}/晚</li>
                                     <li>发布时间：{{house.ctime}}</li>
                                 </ul>
-                            </div> 
+                            </div>
                         </div>
                     </a>
                 </li>
                 {{/each}}
-            </ul>
+            </script>
         </div>
         <div class="footer">
             <p><span><i class="fa fa-copyright"></i></span>爱家租房&nbsp;&nbsp;享受家的温馨</p>

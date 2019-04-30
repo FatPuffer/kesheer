@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68851445-ccc3-458e-94d4-d221c094214b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kesheer/tasks/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kesheer/tasks/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kesheer/tasks/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kesheer/tasks/sms/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kesheer/tasks/sms/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kesheer/api_1_0/verify_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/kesheer/api_1_0/verify_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kesheer/api_1_0/houses.py" beforeDir="false" afterPath="$PROJECT_DIR$/kesheer/api_1_0/houses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kesheer/static/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kesheer/static/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kesheer/static/html/myhouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/kesheer/static/html/myhouse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kesheer/static/js/i_home/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/kesheer/static/js/i_home/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kesheer/static/js/i_home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/kesheer/static/js/i_home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kesheer/static/js/i_home/myhouse.js" beforeDir="false" afterPath="$PROJECT_DIR$/kesheer/static/js/i_home/myhouse.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,10 +28,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/profile.py">
+        <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/houses.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="-4651">
+              <caret line="41" column="66" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="66" />
               <folding>
                 <element signature="e#22#69#0" expanded="true" />
               </folding>
@@ -38,47 +39,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kesheer/tasks/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#23#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kesheer/tasks/sms/tasks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="45" />
-              <folding>
-                <element signature="e#23#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/verify_code.py">
+        <entry file="file://$PROJECT_DIR$/kesheer/static/js/i_home/detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
-              <folding>
-                <element signature="e#23#85#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="550">
+              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kesheer/tasks/config.py">
+        <entry file="file://$PROJECT_DIR$/kesheer/static/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="300">
+              <caret line="59" column="26" lean-forward="true" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kesheer/static/js/i_home/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -135,14 +118,19 @@
         <option value="$PROJECT_DIR$/kesheer/static/js/i_home/profile.js" />
         <option value="$PROJECT_DIR$/kesheer/api_1_0/__init__.py" />
         <option value="$PROJECT_DIR$/kesheer/static/html/newhouse.html" />
-        <option value="$PROJECT_DIR$/kesheer/api_1_0/profile.py" />
         <option value="$PROJECT_DIR$/kesheer/static/js/i_home/newhouse.js" />
-        <option value="$PROJECT_DIR$/kesheer/api_1_0/houses.py" />
         <option value="$PROJECT_DIR$/kesheer/tasks/sms.py" />
         <option value="$PROJECT_DIR$/kesheer/tasks/config.py" />
         <option value="$PROJECT_DIR$/kesheer/tasks/main.py" />
         <option value="$PROJECT_DIR$/kesheer/tasks/sms/tasks.py" />
         <option value="$PROJECT_DIR$/kesheer/api_1_0/verify_code.py" />
+        <option value="$PROJECT_DIR$/kesheer/static/js/i_home/myhouse.js" />
+        <option value="$PROJECT_DIR$/kesheer/api_1_0/profile.py" />
+        <option value="$PROJECT_DIR$/kesheer/api_1_0/houses.py" />
+        <option value="$PROJECT_DIR$/kesheer/static/html/myhouse.html" />
+        <option value="$PROJECT_DIR$/kesheer/static/js/i_home/index.js" />
+        <option value="$PROJECT_DIR$/kesheer/static/html/index.html" />
+        <option value="$PROJECT_DIR$/kesheer/static/js/i_home/detail.js" />
       </list>
     </option>
   </component>
@@ -175,20 +163,22 @@
               <item name="kesheer" type="b2602c69:ProjectViewProjectNode" />
               <item name="kesheer" type="462c0819:PsiDirectoryNode" />
               <item name="kesheer" type="462c0819:PsiDirectoryNode" />
-              <item name="api_1_0" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kesheer" type="b2602c69:ProjectViewProjectNode" />
               <item name="kesheer" type="462c0819:PsiDirectoryNode" />
               <item name="kesheer" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kesheer" type="b2602c69:ProjectViewProjectNode" />
               <item name="kesheer" type="462c0819:PsiDirectoryNode" />
               <item name="kesheer" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="sms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="i_home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,18 +279,18 @@
       <workItem from="1556412719885" duration="12682000" />
       <workItem from="1556438179060" duration="7263000" />
       <workItem from="1556500156599" duration="23060000" />
-      <workItem from="1556585907213" duration="14297000" />
+      <workItem from="1556585907213" duration="17807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57302000" />
+    <option name="totallyTimeSpent" value="60812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1270" height="903" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25531915" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20130932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -314,7 +304,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32849365" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.27864584" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.114583336" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -383,16 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/static/js/i_home/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/static/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="70" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -467,16 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/users.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#22#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kesheer/utils/commons.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -514,38 +484,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/static/html/myhouse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="175" column="45" selection-start-line="175" selection-start-column="45" selection-end-line="175" selection-end-column="45" />
-          <folding>
-            <element signature="e#23#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/houses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="137" column="15" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="15" />
-          <folding>
-            <element signature="e#22#69#0" expanded="true" />
-            <element signature="e#368#1049#0" />
-            <element signature="e#1495#3939#0" />
-            <element signature="e#4068#5360#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -562,16 +504,6 @@
           <caret line="277" column="75" selection-start-line="277" selection-start-column="75" selection-end-line="277" selection-end-column="75" />
           <folding>
             <element signature="n#div#1;n#li#0;n#form#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/profile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#22#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -593,12 +525,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/tasks/main.py">
+    <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/verify_code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="994">
+          <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
           <folding>
-            <element signature="e#23#48#0" expanded="true" />
+            <element signature="e#23#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -613,13 +545,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/verify_code.py">
+    <entry file="file://$PROJECT_DIR$/kesheer/tasks/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#23#85#0" expanded="true" />
+            <element signature="e#23#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1143">
+          <caret line="175" column="45" selection-start-line="175" selection-start-column="45" selection-end-line="175" selection-end-column="45" />
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/users.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#22#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/static/js/i_home/myhouse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/static/html/myhouse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="52" column="15" lean-forward="true" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/profile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="e#22#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/static/js/i_home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="89" column="31" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/static/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="59" column="26" lean-forward="true" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/api_1_0/houses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4651">
+          <caret line="41" column="66" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="66" />
+          <folding>
+            <element signature="e#22#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kesheer/static/js/i_home/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
         </state>
       </provider>
     </entry>
