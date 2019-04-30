@@ -11,6 +11,7 @@ from kesheer.libs.yuntongxun.sms import CCP
 from kesheer import redis_store
 from kesheer import constants
 from kesheer.utils.response_code import RET
+from kesheer.tasks.sms import tasks
 
 
 # GET 127.0.0.1/api/v1.0/image_codes/<image_code_id>
@@ -131,14 +132,25 @@ def get_sms_code(mobile):
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="保存验证码失败")
 
-    # 发送短信
-    ccp = CCP()
-    try:
-        #                             发送给谁     验证码                    有效期(分钟)               模板类型
-        result = ccp.send_template_sms(mobile, [sms_code, int(constants.SMS_CODE_REDIS_EXPIRES/60)], 1)
-    except Exception as e:
-        current_app.logger.error(e)
-        return jsonify(errno=RET.THIRDERR, errmsg="发送异常")
+    # # 发送短信:正常流程
+    # ccp = CCP()
+    # try:
+    #     #                             发送给谁     验证码                    有效期(分钟)               模板类型
+    #     result = ccp.send_template_sms(mobile, [sms_code, int(constants.SMS_CODE_REDIS_EXPIRES/60)], 1)
+    # except Exception as e:
+    #     current_app.logger.error(e)
+    #     return jsonify(errno=RET.THIRDERR, errmsg="发送异常")
+
+    # 使用celery异步发送短信，delay函数调用后立即返回
+    result = tasks.send_sms.delay(mobile, [sms_code, int(constants.SMS_CODE_REDIS_EXPIRES / 60)], 1)
+    # 返回的是异步执行结果的对象
+    # print(result.id)
+    # 通过get方法能够获取celery异步执行的结果
+    # get方法默认是阻塞行为，会等到有了执行结果之后才返回
+    # get方法也接受参数timeout，超时时间，超过时间之后还拿不到，则返回
+    # ret = result.get()
+    # print(ret)
+
     if result == 0:
         # 表示发送成功
         return jsonify(errno=RET.OK, errmsg="发送成功")
