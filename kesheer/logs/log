@@ -598,3 +598,8 @@ INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:22] "GET /static/js/i_hom
 INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:22] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
 INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:22] "GET /static/css/i_home/profile.css HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:37] "POST /api/v1.0/users/avatar HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 11:42:50] "GET /areas HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 11:43:01] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO houses.py:25 hit redis area_info
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 11:43:30] "GET /api/v1.0/areas HTTP/1.1" 200 -
