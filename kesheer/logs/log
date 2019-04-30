@@ -357,3 +357,244 @@ INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 15:13:10] "GET /index.html HTTP
 INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 15:13:11] "GET /api/v1.0/session HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 15:13:11] "GET /api/v1.0/houses/index HTTP/1.1" 404 -
 INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 15:13:11] "GET /api/v1.0/areas HTTP/1.1" 404 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:05:00] "GET /users/avatar HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:05:19] "POST /users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:32:30] "GET /userprofile.html HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:32:48] "GET /profile.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:32:48] "GET /static/css/i_home/profile.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:32:48] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:32:48] "GET /static/js/i_home/profile.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:32:48] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:32:48] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:32:48] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:03] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:03] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:03] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:03] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:03] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:04] "GET /static/css/i_home/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:04] "GET /static/css/i_home/profile.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:04] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:04] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:04] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:04] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:04] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:04] "GET /static/js/i_home/profile.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:33:15] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:36:39] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:38:48] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:38:56] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:38:57] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:20] "GET /static/css/i_home/login.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:20] "GET /static/js/i_home/login.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:20] "GET /static/images/logo@128x59.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:33] "POST /api/v1.0/sessions HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:33] "GET /static/plugins/swiper/css/swiper.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:33] "GET /static/css/i_home/index.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:33] "GET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:33] "GET /static/js/template.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:34] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:34] "GET /api/v1.0/houses/index HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:34] "GET /api/v1.0/areas HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:37] "GET /my.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:42] "GET /static/js/i_home/my.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:42] "GET /static/css/i_home/my.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:40:42] "GET /api/v1.0/user HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:41:05] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/css/i_home/profile.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/css/i_home/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:33] "GET /static/js/i_home/profile.js HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/css/i_home/profile.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/css/i_home/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:43] "GET /static/js/i_home/profile.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:42:45] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/css/i_home/profile.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/css/i_home/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:08] "GET /static/js/i_home/profile.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:10] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:45:12] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/css/i_home/profile.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/css/i_home/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:46:42] "GET /static/js/i_home/profile.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:02] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:44] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/css/i_home/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/css/i_home/profile.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:45] "GET /static/js/i_home/profile.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:47:46] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/css/i_home/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/css/i_home/profile.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:48:59] "GET /static/js/i_home/profile.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:49:02] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/css/i_home/profile.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/css/i_home/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 17:56:11] "GET /static/js/i_home/profile.js HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:11:42] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:11:54] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:12:35] "POST /api/v1.0/users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:13:08] "POST /users/avatar HTTP/1.1" 405 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/css/i_home/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/css/i_home/profile.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:51] "GET /static/js/i_home/profile.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [29/Apr/2019 18:20:56] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask/app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask/ctx.py", line 377, in push
+    self.app, self.request
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:36] "GET /login HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask/app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask/ctx.py", line 377, in push
+    self.app, self.request
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:36] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:51] "GET /login HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /login.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /static/css/i_home/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /static/css/i_home/login.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /static/js/i_home/login.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /static/images/logo@128x59.png HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:42:57] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:08] "POST /api/v1.0/sessions HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:08] "GET / HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /static/plugins/swiper/css/swiper.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /static/css/i_home/index.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /static/js/template.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /static/js/i_home/index.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /api/v1.0/houses/index HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:09] "GET /api/v1.0/areas HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:14] "GET /my.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:14] "GET /static/css/i_home/my.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:14] "GET /static/js/i_home/my.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:14] "GET /api/v1.0/user HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:17] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:22] "GET /static/js/i_home/profile.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:22] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:22] "GET /static/css/i_home/profile.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 10:43:37] "POST /api/v1.0/users/avatar HTTP/1.1" 200 -
