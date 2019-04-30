@@ -4,7 +4,7 @@ function getCookie(name) {
 }
 
 $(document).ready(function(){
-    // Ïòºó¶Ë»ñÈ¡³ÇÇøĞÅÏ¢
+    // å‘åç«¯è·å–åŸåŒºä¿¡æ¯
     $.get("/api/v1.0/areas", function (resp) {
         if (resp.errno == "0"){
             var areas = resp.data;
@@ -13,7 +13,7 @@ $(document).ready(function(){
             //     $("#area-id").append('<option value="'+area.aid+'">'+area.aname+'</option>')
             // }
 
-            // Ê¹ÓÃÇ°¶ËjsÄ£°å
+            // ä½¿ç”¨jsæ¨¡æ¿
             var html = template("areas-tmpl", {areas: areas});
             $("#area-id").html(html)
         }else {
@@ -21,22 +21,22 @@ $(document).ready(function(){
         }
     }, "json");
 
-    $("form-house-info").submit(function (e) {
+    $("#form-house-info").submit(function (e) {
         e.preventDefault();
-        //´¦Àí±íµ¥Êı¾İ
+        // å¤„ç†è¡¨å•æ•°æ®
         var data = {};
         $("#form-house-info").serializeArray().map(function (x) {
             data[x.name] = x.value
         });
 
-        // ÊÕ¼¯ÉèÖÃ¶àÑ¡¿òvalueÖµ
+        // å¤„ç†è®¾æ–½idä¿¡æ¯
         var facility = [];
         $(":checked[name=facility]").each(function (index, x) {
             facility[index] = $(x).val()
         });
         data.facility = facility;
 
-        // Ïòºó¶Ë·¢ËÍÊı¾İ
+        // å‘åç«¯å‘é€è¯·æ±‚
         $.ajax({
             url: "/api/v1.0/houses/info",
             type: "post",
@@ -48,14 +48,14 @@ $(document).ready(function(){
             },
             success: function (resp) {
                 if (resp.errno == "4101"){
-                    // ÓÃ»§Î´µÇÂ¼
+                    // ç”¨æˆ·æœªç™»å½•
                     location.href = "/login.html";
                 } else if (resp.errno == "0"){
-                    // Òş²Ø»ù±¾ĞÅÏ¢±íµ¥
+                    // éšè—åŸºæœ¬ä¿¡æ¯è¡¨å•
                     $("#form-house-info").hide();
-                    // ÏÔÊ¾Í¼Æ¬ĞÅÏ¢
+                    // æ˜¾ç¤ºå›¾ç‰‡è¡¨å•
                     $("#form-house-image").show();
-                    // ÉèÖÃ·¿Îİhouse_idĞÅÏ¢
+                    // è®¾ç½®å›¾ç‰‡è¡¨å•ä¸­çš„house_id
                     $("#house-id").val(resp.data.house_id)
                 }else {
                     alert(resp.errmsg);
@@ -74,11 +74,12 @@ $(document).ready(function(){
                 "X-CSRFToken": getCookie("csrf_token")
             },
             success: function (resp) {
+                console.log(resp);
             if (resp.errno == "4101"){
-                // ÓÃ»§Î´µÇÂ¼
+                // ç”¨æˆ·æœªç™»å½•
                 location.href = "/login.html";
             } else if (resp.errno == "0"){
-                // Òş²Ø»ù±¾ĞÅÏ¢±íµ¥
+                // å‘è¡¨å•ä¸­è¿½åŠ å›¾ç‰‡
                 $(".house-image-cons").append('<img src="'+resp.data.image_url+'">');
             }else {
                 alert(resp.errmsg);
