@@ -2,7 +2,7 @@
 from kesheer.utils.image_storage import storage
 from flask import g, current_app, request, jsonify, session
 import json
-import datetime
+from datetime import datetime
 
 from . import api
 from kesheer.utils.commons import login_required
@@ -278,15 +278,122 @@ def get_house_detail(house_id):
     return resp
 
 
+# GET /api/v1.0/houses?sd=2019-05-05&ed=2019-05-sa06&id=2&sk=new&p=1
+@api.route("/houses")
+def get_houxe_list():
+    """
+    获取房屋的列表信息（搜索页面）
+    起始日期\房屋id\排序规则\页码
+    :return:
+    """
+    start_date = request.args.get('sd')
+    end_date = request.args.get('ed')
+    area_id = request.args.get('id')
+    # 如果用户未选择排序，我们默认使用最新上线排序
+    sort_key = request.args.get('sk', 'new')
+    page = request.args.get('p')
 
+    # 处理时间
+    try:
+        if start_date:
+            """
+            datetime.strftime():将时间类型转换为字符串
+            datetime.strptime():将字符串转换为时间类型
+            """
+            start_date = datetime.strptime(start_date, "%Y-%m-%d")
 
+        if end_date:
+            end_date = datetime.strptime(end_date, "%Y-%m-%d")
 
+        if start_date and end_date:
+            assert start_date <= end_date
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="日期参数错误")
 
+    # 判断区域id
+    if area_id:
+        try:
+            area = Area.query.get(area_id)
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=RET.PARAMERR, errmsg="区域参数错误")
 
+    # 处理页数
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        page = 1
 
+    # 过滤条件参数容器
+    filter_params = []
 
+    # 填充过滤参数
+    # 时间条件
+    conflict_orders = None
 
+    try:
+        if start_date and end_date:
+            # 指定起始时间查询冲突的订单
+            conflict_orders = Order.query.filter(Order.begin_date <= end_date, Order.end_date >= start_date).all()
 
+        elif start_date:
+            # 指定开始时间查询冲突的订单
+            conflict_orders = Order.query.filter(Order.end_date >= start_date).all()
+
+        elif end_date:
+            # 指定结束时间查询冲突的订单
+            conflict_orders = Order.query.filter(Order.begin_date <= end_date).all()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg='数据库异常')
+
+    if conflict_orders:
+        # 从订单表中获取冲突房屋的id
+        conflict_house_ids = [order.house_id for order in conflict_orders]
+
+        # 如果没有冲突的房屋id,向查询参数中添加条件
+        if conflict_house_ids:
+            filter_params.append(House.id.notin_(conflict_house_ids))
+
+    # 区域条件
+    if area_id:
+        # [<sqlalchemy.sql.elements.BinaryExpression object at 0x7fd30379bfd0>]
+        # House.area_id.__eq__(1)
+        # == : __eq__
+        # dir(House.area_id) : 在ipython下执行，可以查看所有可以使用的方法
+        filter_params.append(House.area_id == area_id)
+
+    # 查询数据库
+    # 补充排序条件
+    if sort_key == 'booking':
+        house_query = House.query.filter(*filter_params).order_by(House.order_count.desc())
+    elif sort_key == 'price-inc':
+        house_query = House.query.filter(*filter_params).order_by(House.price.asc())
+    elif sort_key == 'price-des':
+        house_query = House.query.filter(*filter_params).order_by(House.price.desc())
+    else:  # 最新上线
+        house_query = House.query.filter(*filter_params).order_by(House.create_time.desc())
+
+    # 处理分页
+    #                                当前页数                   每页数据量                       自动的错误输出
+    try:
+        page_obj = house_query.paginate(page=page, per_page=constants.HOUSE_LIST_PAGE_CAPACITY, error_out=False)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg='数据库异常')
+
+    # 获取页面数据
+    house_list = page_obj.items
+    houses = []
+    for house in house_list:
+        houses.append(house.to_basic_dict())
+
+    # 获取总页数
+    total_page = page_obj.pages
+
+    return jsonify(errno=RET.OK, errmsg='OK', data={'total_page': total_page, 'houses': houses, 'current_page': page})
 
 
 

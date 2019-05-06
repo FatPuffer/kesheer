@@ -964,3 +964,43 @@ ERROR houses.py:224 'module' object has no attribute 'HOME_PAGE_DATA_REDIS_EXPIR
 INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 17:58:35] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
 INFO houses.py:26 hit redis area_info
 INFO _internal.py:122 127.0.0.1 - - [30/Apr/2019 17:58:35] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on /api/v1/houses [GET]
+Traceback (most recent call last):
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask/app.py", line 1833, in finalize_request
+    response = self.process_response(response)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask/app.py", line 2114, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/flask_session/sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/ubantu/.virtualenvs/ihome/local/lib/python2.7/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:27:41] "GET /api/v1/houses HTTP/1.1" 500 -
+INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:29:45] "GET /api/v1/houses HTTP/1.1" 404 -
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:31:28] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:33:22] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:38:41] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:39:39] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:39:54] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR houses.py:327 int() argument must be a string or a number, not 'NoneType'
+INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:40:52] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:327 int() argument must be a string or a number, not 'NoneType'
+INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:41:33] "GET /api/v1.0/houses?sk=price-inc HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:42:05] "GET /api/v1.0/houses?sk=price-inc&p=2 HTTP/1.1" 200 -
