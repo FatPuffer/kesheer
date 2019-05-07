@@ -278,7 +278,7 @@ def get_house_detail(house_id):
     return resp
 
 
-# GET /api/v1.0/houses?sd=2019-05-05&ed=2019-05-sa06&id=2&sk=new&p=1
+# GET /api/v1.0/houses?sd=2019-05-05&ed=2019-05-06&id=2&sk=new&p=1
 @api.route("/houses")
 def get_houxe_list():
     """
@@ -286,9 +286,9 @@ def get_houxe_list():
     起始日期\房屋id\排序规则\页码
     :return:
     """
-    start_date = request.args.get('sd')
-    end_date = request.args.get('ed')
-    area_id = request.args.get('id')
+    start_date = request.args.get('sd', '')
+    end_date = request.args.get('ed', '')
+    area_id = request.args.get('id', '')
     # 如果用户未选择排序，我们默认使用最新上线排序
     sort_key = request.args.get('sk', 'new')
     page = request.args.get('p')
@@ -312,7 +312,7 @@ def get_houxe_list():
         return jsonify(errno=RET.PARAMERR, errmsg="日期参数错误")
 
     # 判断区域id
-    if area_id:
+    if area_id and area_id != '':
         try:
             area = Area.query.get(area_id)
         except Exception as e:
@@ -325,6 +325,15 @@ def get_houxe_list():
     except Exception as e:
         current_app.logger.error(e)
         page = 1
+
+    redis_key = "house_%s_%s_%s_%s" % (start_date, end_date, area_id, sort_key)
+    try:
+        resp_json = redis_store.hget(redis_key, page)
+    except Exception as e:
+        current_app.logger.error(e)
+    else:
+        if resp_json:
+            return resp_json, 200, {"Content-Type": "application/json"}
 
     # 过滤条件参数容器
     filter_params = []
@@ -393,9 +402,44 @@ def get_houxe_list():
     # 获取总页数
     total_page = page_obj.pages
 
-    return jsonify(errno=RET.OK, errmsg='OK', data={'total_page': total_page, 'houses': houses, 'current_page': page})
+    # 页面缓存
+    """
+    入住时间_离开时间_区域_排序规则
+    "house_start_end_area_sort":{
+        页码:数据
+        "1":{},
+        "2":{},
+        ....
+    }
+    """
 
+    resp_dict = dict(errno=RET.OK, errmsg='OK', data={'total_page': total_page, 'houses': houses, 'current_page': page})
+    resp_json = json.dumps(resp_dict)
 
+    if page <= total_page:
+        # 设置缓存
+        redis_key = "house_%s_%s_%s_%s" % (start_date, end_date, area_id, sort_key)
+        # 哈希类型
+        try:
+            # 如果设置缓存成功，但是缓存对象过期时间设置失败，则会导致该缓存永久有效
+            # pipeline:一次进行多条语句
+            # redis_store.hset(redis_key, page, resp_json)
+            # redis_store.expire(redis_key, constants.HOUSE_LIST_PAGE_REDIS_CACHE_EXPIRES)
+
+            # 创建redis管道对象，可以一次执行多条语句
+            pipeline = redis_store.pipeline()
+            # 开启多条语句记录
+            pipeline.multi()
+
+            pipeline.hset(redis_key, page, resp_json)
+            pipeline.expire(redis_key, constants.HOUSE_LIST_PAGE_REDIS_CACHE_EXPIRES)
+
+            # 执行语句
+            pipeline.execute()
+        except Exception as e:
+            current_app.logger.error(e)
+
+    return resp_json, 200, {"Content-Type": "application/json"}
 
 
 

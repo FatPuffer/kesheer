@@ -1004,3 +1004,47 @@ INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:40:52] "GET /api/v1.0/houses
 ERROR houses.py:327 int() argument must be a string or a number, not 'NoneType'
 INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:41:33] "GET /api/v1.0/houses?sk=price-inc HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [06/May/2019 17:42:05] "GET /api/v1.0/houses?sk=price-inc&p=2 HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [07/May/2019 14:53:54] "GET /houses HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [07/May/2019 14:53:54] "GET /favicon.ico HTTP/1.1" 200 -
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+ERROR houses.py:426 Invalid input of type: 'dict'. Convert to a byte, string or number first.
+INFO _internal.py:122 127.0.0.1 - - [07/May/2019 14:54:06] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+ERROR houses.py:426 Invalid input of type: 'dict'. Convert to a byte, string or number first.
+INFO _internal.py:122 127.0.0.1 - - [07/May/2019 14:57:58] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/ubantu/myproject/kesheer/kesheer/kesheer/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+ERROR houses.py:428 Invalid input of type: 'dict'. Convert to a byte, string or number first.
+INFO _internal.py:122 127.0.0.1 - - [07/May/2019 15:00:10] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/ubantu/myproject/kesheer/kesheer/kesheer/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+INFO _internal.py:122 127.0.0.1 - - [07/May/2019 15:01:51] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/ubantu/myproject/kesheer/kesheer/kesheer/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+INFO _internal.py:122  * Detected change in '/home/ubantu/myproject/kesheer/kesheer/kesheer/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+INFO _internal.py:122 127.0.0.1 - - [07/May/2019 15:07:33] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/ubantu/myproject/kesheer/kesheer/kesheer/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+ERROR houses.py:326 int() argument must be a string or a number, not 'NoneType'
+INFO _internal.py:122 127.0.0.1 - - [07/May/2019 15:08:19] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/ubantu/myproject/kesheer/kesheer/manage.py', reloading
+INFO _internal.py:122  * Restarting with stat
