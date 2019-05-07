@@ -136,7 +136,7 @@ class House(BaseModel,db.Model):
             "area_name": self.area.name,
             "img_url": constants.QINIU_URL_DOMIN + self.index_image_url if self.user.avatar_url else "",
             "room_count": self.room_count,
-            "order_count": self.room_count,
+            "order_count": self.order_count,
             "address": self.address,
             "user_avatar": constants.QINIU_URL_DOMIN + self.user.avatar_url if self.user.avatar_url else "",
             "ctime": self.create_time.strftime("%Y-%m-%d")

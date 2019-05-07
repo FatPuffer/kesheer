@@ -215,11 +215,11 @@ def get_house_index():
             if not house.index_image_url:
                 continue
             houses_list.append(house.to_basic_dict())
-
+        print houses_list
         # 将数据转换为json，并保存到redis缓存
         json_houses = json.dumps(houses_list)  # "[{},{},{}]"
         try:
-            redis_store.setex("home_page_data", constants.HOME_PAGE_DATA_REDIS_EXPIRES, json_houses)
+            redis_store.setex("home_page_data", constants.HOUSE_PAGE_DATA_REDIS_EXPIRES, json_houses)
         except Exception as e:
             current_app.logger.error(e)
 
