@@ -148,7 +148,7 @@ class House(BaseModel,db.Model):
         house_dict = {
             "hid": self.id,
             "user_id": self.user_id,
-            "user_name": self.user_name,
+            "user_name": self.user.name,
             "user_avatar": constants.QINIU_URL_DOMIN + self.user.avatar_url if self.user.avatar_url else "",
             "title": self.title,
             "price": self.price,
@@ -158,7 +158,7 @@ class House(BaseModel,db.Model):
             "unit": self.unit,
             "capacity": self.capacity,
             "beds": self.beds,
-            "deposite": self.deposit,
+            "deposit": self.deposit,
             "max_days": self.max_days,
             "min_days": self.min_days,
         }
@@ -233,3 +233,19 @@ class Order(BaseModel, db.Model):
         ),
         default="WAIT_ACCEPT", index=True)
     comment = db.Column(db.Text)  # 订单的评论信息或者拒单原因
+
+    def to_dict(self):
+        """将订单信息转换为字典数据"""
+        order_dict = {
+            "order_id": self.id,
+            "title": self.house.title,
+            "img_url": constants.QINIU_URL_DOMAIN + self.house.index_image_url if self.house.index_image_url else "",
+            "start_date": self.begin_date.strftime("%Y-%m-%d"),
+            "end_date": self.end_date.strftime("%Y-%m-%d"),
+            "ctime": self.create_time.strftime("%Y-%m-%d %H:%M:%S"),
+            "days": self.days,
+            "amount": self.amount,
+            "status": self.status,
+            "comment": self.comment if self.comment else ""
+        }
+        return order_dict

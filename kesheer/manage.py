@@ -5,7 +5,7 @@ from flask_script import Manager  # 数据库脚本管理对象
 from flask_migrate import Migrate, MigrateCommand  # 数据库迁移解析对象和执行对象
 
 # 创建flask的应用对象
-app = create_app("product")
+app = create_app("develope")
 
 # 创建flask脚本管理工具
 manager = Manager(app)

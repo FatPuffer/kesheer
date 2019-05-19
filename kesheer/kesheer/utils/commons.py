@@ -24,7 +24,6 @@ def login_required(view_func):
     def wrapper(*args, **kwargs):
         # 判断用户登陆状态
         user_id = session.get("user_id")
-        print("用户id", user_id)
         # 如果用户是登陆的，直接执行试图函数
         if user_id is not None:
             # 全局g对象，用来传递参数

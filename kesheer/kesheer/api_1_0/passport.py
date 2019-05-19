@@ -123,7 +123,6 @@ def login():
     # redis记录："access_nums_请求ip" % ：次数
     # 获取用户ip
     user_ip = request.remote_addr
-    print user_ip
     try:
         access_nums = redis_store.get("access_nums_%s" % user_ip)
     except Exception as e:

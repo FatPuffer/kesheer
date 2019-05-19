@@ -10,12 +10,11 @@ from kesheer.models import House, Order
 from . import api
 
 
-@api.route("/orders", methods=["POST"])
+@api.route("/orders", methods=["GET", "POST"])
 @login_required
 def save_order():
     """保存订单"""
     user_id = g.user_id
-
     # 获取参数
     order_data = request.get_json()
     if not order_data:
@@ -101,16 +100,15 @@ def get_user_orders():
 
     # 用户的身份信息，用户想要查询作为房客预定别人房子的订单，还是想要作为房东查询别人预定自己房子的订单
     role = request.args.get("role", "")
-
     # 查询订单数据
     try:
         if "landlord" == role:
             # 以房东的身份查询订单
             # 先查询属于自己的房子有哪些
             houses = House.query.filter(House.user_id == user_id).all()
-            houses_ids = [houses.id for house in houses]
+            houses_ids = [house.id for house in houses]
             # 再查询预定了自己房子的订单
-            orders = Order.query.filter(Order.user_id.in_(houses_ids)).order_by(Order.create_time.desc())
+            orders = Order.query.filter(Order.house_id.in_(houses_ids)).order_by(Order.create_time.desc())
         else:
             # 以房客的身份查询订单，查询自己预定的订单
             orders = Order.query.filter(Order.user_id == user_id).order_by(Order.create_time.desc())
@@ -123,6 +121,7 @@ def get_user_orders():
     if orders:
         for order in orders:
             order_dict_list.append(order.to_dict())
+    print order_dict_list
     return jsonify(errno=RET.OK, errmsg="OK", data={"orders": order_dict_list})
 
 

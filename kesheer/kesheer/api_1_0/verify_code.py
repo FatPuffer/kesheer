@@ -79,7 +79,6 @@ def get_sms_code(mobile):
     try:
         # 如果图片验证码过期,则返回None
         real_image_code = redis_store.get("image_code_%s" % image_code_id)
-        print real_image_code
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="redis数据库异常")

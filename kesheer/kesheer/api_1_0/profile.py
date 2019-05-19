@@ -21,7 +21,6 @@ def set_user_avatar():
     user_id = g.user_id
     # 获取图片
     image_file = request.files.get("avatar")
-    print image_file
 
     if image_file is None:
         return jsonify(errno=RET.PARAMERR, errmsg="未上传图片")
@@ -46,7 +45,6 @@ def set_user_avatar():
 
     # 保存成功
     avatar_url = constants.QINIU_URL_DOMIN + file_name
-    print("图片链接", avatar_url)
     return jsonify(errno=RET.OK, errmsg="保存图片成功", data={"avatar_url": avatar_url})
 
 

@@ -20,8 +20,8 @@ $(document).ready(function(){
     // 获取房屋的详细信息
     $.get("/api/v1.0/houses/" + houseId, function (resp) {
         if ("0" == resp.errno) {
-            $(".swiper-container").html(template("house-image-tmpl", {img_urls:resp.data.house.imag}));
-            $(".detail-con").html(template("house-image-tmpl", {img_urls:resp.data.house}));
+            $(".swiper-container").html(template("house-image-tmpl", {img_urls:resp.data.house.img_urls, price:resp.data.house.price}));
+            $(".detail-con").html(template("house-detail-tmpl", {house:resp.data.house}));
 
             // resp.user_id为访问页面用户，resp.data.user_id为房东
             if (resp.data.user_id != resp.data.house.user_id){
