@@ -19,13 +19,12 @@ $(document).ready(function(){
     $(window).on('resize', centerModals);
     // 房客订单查询
     $.get("api/v1.0/user/orders?role=custom", function (resp) {
-        alert(resp.errno);
         if ("0" == resp.errno) {
             $(".orders-list").html(template("orders-list-tmpl", {orders: resp.data.orders}));
             $(".order-pay").on("click", function () {
                 var orderId = $(this).parents("li").attr("order-id");
                 $.ajax({
-                    url: "api/v1.0/orders" + orderId + "/payment",
+                    url: "api/v1.0/orders/" + orderId + "/payment",
                     type: "post",
                     dataType: "json",
                     headers: {
@@ -35,6 +34,7 @@ $(document).ready(function(){
                         if ("4101" == resp.errno) {
                             location.href = "/login.html";
                         } else if ("0" == resp.errno) {
+                            // 引导用户跳转到支付宝支付页面
                             location.href = resp.data.pay_url;
                         }
                     }
@@ -54,7 +54,7 @@ $(document).ready(function(){
                 };
                 // 处理评论
                 $.ajax({
-                    url: "pai/v1.0/orders" + orderId + "/comment",
+                    url: "api/v1.0/orders/" + orderId + "/comment",
                     type: "PUT",
                     data: JSON.stringify(data),
                     contentType: "application/json",

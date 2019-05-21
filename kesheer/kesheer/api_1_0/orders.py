@@ -121,7 +121,7 @@ def get_user_orders():
     if orders:
         for order in orders:
             order_dict_list.append(order.to_dict())
-    print order_dict_list
+
     return jsonify(errno=RET.OK, errmsg="OK", data={"orders": order_dict_list})
 
 
@@ -184,7 +184,8 @@ def save_order_comment(order_id):
     # 获取参数
     req_data = request.get_json()
     comment = req_data.get("comment")
-
+    print 111111111111111111
+    print comment
     # 检查参数
     if not comment:
         return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
@@ -205,7 +206,7 @@ def save_order_comment(order_id):
         # 将订单状态设置为已完成
         order.status = "COMPLETE"
         # 保存订单的评论信息
-        order.status = comment
+        order.comment = comment
         # 将房屋的完成订单数增加1
         house.order_count += 1
         db.session.add(order)
