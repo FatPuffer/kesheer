@@ -1,0 +1,24 @@
+方式一：直接在终端指定添加日志：
+    gunicorn -w 4 -b 127.0.0.1:5000 -D --access-logfile ./logs/log manage:app
+    -w：指定进程数，一般为（服务器内核数）*2+1，
+    -b：绑定端口号
+    -D：以守护进程在后台运行
+    --access-logfile：指定日志文件（logs需手动创建：当前目录下的logs文件夹下的log文件）
+
+方式二：也可设置详细日志信息，如下：
+    1、新建配置文件gunicorn.conf
+        vim  /etc/gunicorn.conf
+    2、添加内容
+        # 并行工作线程数
+        workers = 4
+        # 监听内网端口5000【按需要更改】
+        bind = '127.0.0.1:5000'
+        # 设置守护进程【关闭连接时，程序仍在运行】
+        daemon = True
+        # 设置超时时间120s，默认为30s。按自己的需求进行设置
+        timeout = 120
+        # 设置访问日志和错误信息日志路径 （logs需手动创建：当前目录下的logs文件夹下的log文件）
+        accesslog = './logs/acess.log'
+        errorlog = './logs/error.log'
+    3、运行项目
+        gunicorn manage:app -c /etc/gunicorn.conf
