@@ -6,40 +6,72 @@ function showSuccessMsg() {
     });
 }
 
+
 function getCookie(name) {
     var r = document.cookie.match("\\b" + name + "=([^;]*)\\b");
     return r ? r[1] : undefined;
 }
 
 $(document).ready(function(){
-     // ²éÑ¯ÓÃ»§ÊµÃûÈÏÖ¤ĞÅÏ¢
+    // æŸ¥è¯¢ç”¨æˆ·çš„å®åè®¤è¯ä¿¡æ¯
     $.get("/api/v1.0/users/auth", function(resp){
-        // 4101±íÊ¾ÓÃ»§Î´µÇÂ¼
+        // 4101ä»£è¡¨ç”¨æˆ·æœªç™»å½•
         if ("4101" == resp.errno) {
             location.href = "/login.html";
-        }else if ("0" == resp.errno) {
-            // Èç¹û·µ»ØµÄÊı¾İÖĞreal_nameÓëid_card²»Îªnull£¬±íÊ¾ÓĞÌîĞ´ÊµÃûĞÅÏ¢
-            if (resp.data.real_name && resp.id_card){
-                $("#real_name").val(resp.data.real_name);
-                $("#id_card").val(resp.data.id_card);
-                // ¸øinputÌí¼ÓdisableÊôĞÔ£¬½ûÖ¹ÓÃ»§ĞŞ¸Ä
-                $("#real_name").prop("disabled", true);
-                $("#id_card").prop("disabled", true);
-                // Òş²ØÌá½»±£´æ°´Å¥
+        } else if ("0" == resp.errno) {
+            // å¦‚æœè¿”å›çš„æ•°æ®ä¸­real_nameä¸id_cardä¸ä¸ºnullï¼Œè¡¨ç¤ºç”¨æˆ·æœ‰å¡«å†™å®åä¿¡æ¯
+            if (resp.data.real_name && resp.data.id_card) {
+                $("#real-name").val(resp.data.real_name);
+                $("#id-card").val(resp.data.id_card);
+                // ç»™inputæ·»åŠ disabledå±æ€§ï¼Œç¦æ­¢ç”¨æˆ·ä¿®æ”¹
+                $("#real-name").prop("disabled", true);
+                $("#id-card").prop("disabled", true);
+                // éšè—æäº¤ä¿å­˜æŒ‰é’®
                 $("#form-auth>input[type=submit]").hide();
             }
-        }else {
+        } else {
             alert(resp.errmsg);
         }
     }, "json");
 
-    // ¹ÜÀíÊµÃûĞÅÏ¢±íµ¥µÄÌá½»ĞĞÎª
+    // ç®¡ç†å®åä¿¡æ¯è¡¨å•çš„æäº¤è¡Œä¸º
     $("#form-auth").submit(function(e){
         e.preventDefault();
+        // å¦‚æœç”¨æˆ·æ²¡æœ‰å¡«å†™å®Œæ•´ï¼Œå±•ç¤ºé”™è¯¯ä¿¡æ¯
         var realName = $("#real-name").val();
         var idCard = $("#id-card").val();
-        if (realName == "" || idCard == ""){
-            $(".error-msg").show()
+        if (realName == "" ||  idCard == "") {
+            $(".error-msg").show();
         }
+
+        // å°†è¡¨å•çš„æ•°æ®è½¬æ¢ä¸ºjsonå­—ç¬¦ä¸²
+        var data = {
+            real_name: realName,
+            id_card: idCard
+        };
+        var jsonData = JSON.stringify(data);
+
+        // å‘åç«¯å‘é€è¯·æ±‚
+        $.ajax({
+            url:"/api/v1.0/users/auth",
+            type:"post",
+            data: jsonData,
+            contentType: "application/json",
+            dataType: "json",
+            headers: {
+                "X-CSRFTOKEN": getCookie("csrf_token")
+            },
+            success: function (resp) {
+                if (0 == resp.errno) {
+                    $(".error-msg").hide();
+                    // æ˜¾ç¤ºä¿å­˜æˆåŠŸçš„æç¤ºä¿¡æ¯
+                    showSuccessMsg();
+                    $("#real-name").prop("disabled", true);
+                    $("#id-card").prop("disabled", true);
+                    $("#form-auth>input[type=submit]").hide();
+                }
+            }
+        });
     })
+
 })
