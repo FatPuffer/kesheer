@@ -5356,3 +5356,20 @@ INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:14:03] "GET /api/v1.0/user H
 INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:14:05] "GET /lorders.html HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:14:05] "GET /static/js/i_home/lorders.js HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:14:05] "GET /api/v1.0/user/orders?role=landlord HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:17:59] "GET /profile.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:17:59] "GET /static/css/i_home/profile.css HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:17:59] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:17:59] "GET /static/js/i_home/profile.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:18:13] "PUT /api/v1.0/users/name HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:18:17] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:18:17] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:18:20] "GET /api/v1.0/user HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:18:22] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO houses.py:198 hit house index info redis
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:18:22] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO houses.py:26 hit redis area_info
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:18:22] "GET /api/v1.0/areas HTTP/1.1" 200 -
