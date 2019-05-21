@@ -77,3 +77,21 @@ def change_user_name():
     session["name"] = name
     return jsonify(errno=RET.OK, errmsg="OK", data={"name": name})
 
+
+@api.route("/user", methods=["GET"])
+@login_required
+def get_user_profile():
+    """获取个人信息"""
+    user_id = g.user_id
+    # 查询数据库获取个人信息
+    try:
+        user = User.query.get(user_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取用户信息失败")
+
+    if user is None:
+        return jsonify(errno=RET.NODATA, errmsg="无效操作")
+
+    return jsonify(errno=RET.OK, errmsg="OK", data=user.to_dict())
+

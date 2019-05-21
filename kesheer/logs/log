@@ -5373,3 +5373,23 @@ INFO houses.py:198 hit house index info redis
 INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:18:22] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
 INFO houses.py:26 hit redis area_info
 INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:18:22] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 142-808-081
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:18] "GET / HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:18] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO houses.py:198 hit house index info redis
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:18] "GET /api/v1.0/houses/index HTTP/1.1" 200 -
+INFO houses.py:26 hit redis area_info
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:18] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:18] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:20] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:23] "GET /my.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:23] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:23] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:27] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:31] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:35] "GET /my.html HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:35] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [21/May/2019 15:19:35] "GET /favicon.ico HTTP/1.1" 200 -
