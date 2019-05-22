@@ -224,7 +224,29 @@ def get_house_index():
 
         return '{"errno":0, "errmsg":"OK", "data":%s}' % json_houses, 200, {"Content-Type": "application/json"}
 
+    
+@api.route("/user/houses", methods=["GET"])
+@login_required
+def get_user_houses():
+    """获取房东发布的房源信息条目"""
+    user_id = g.user_id
 
+    try:
+        # House.query.filter_by(user_id=user_id)
+        user = User.query.get(user_id)
+        houses = user.houses
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取数据失败")
+
+    # 将查询到的房屋信息转换为字典存放到列表中
+    houses_list = []
+    if houses:
+        for house in houses:
+            houses_list.append(house.to_basic_dict())
+    return jsonify(errno=RET.OK, errmsg="OK", data={"houses": houses_list})
+    
+    
 @api.route("/houses/<int:house_id>", methods=["GET"])
 def get_house_detail(house_id):
     """获取房屋详情"""
